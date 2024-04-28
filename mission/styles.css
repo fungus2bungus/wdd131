@@ -1,0 +1,47 @@
+.content {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 40px 160px 20px 320px;
+    border: solid 1px rgb(176, 175, 175) ;
+    padding: 40px 140px 60px 140px;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+h5 {
+    color: #006EB6;
+    margin: -2px 0px -2px 0px;
+    font-weight: 400;
+}
+
+.main-title {
+    text-align: center;
+    border-bottom: rgb(176, 175, 175) solid 1px;
+    letter-spacing: 0.1cm;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+main {
+    /*text-align: center;*/
+}
+
+.stuff-do li {
+   /* text-align: center;*/
+   
+   margin: 20px 0px 20px 0px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 150px;
+    align-content: center;
+}
