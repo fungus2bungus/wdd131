@@ -10,5 +10,6 @@ function changeTheme() {
     else {
         document.querySelector("body").removeAttribute("class");
         document.querySelector("h3").style.color = "#006ab6";
+        document.querySelector("#logo").setAttribute("src", "byui-logo_blue.webp")
     }
 }
