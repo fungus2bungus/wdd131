@@ -1,0 +1,49 @@
+body {
+    Padding: 0% 10% 1% 10%;
+    font-size: 20px;
+    /*display: grid;
+    grid-template-columns: repeat(6, 1fr);*/
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    border-radius: 20px;
+    padding: 0px 8% 0px 8%;
+    letter-spacing: 0.125em;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #006ab6;
+    max-width: 700px;
+    border-bottom: 1px solid lightgray;
+    margin: 0px 12% 20px 14%;
+}
+
+main {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.5em;
+    margin: 4% 5% 3% 22%;
+    /*padding: 0px 50px 50px 100px; */
+}
+
+.listed li {
+    margin: 20px 0px 20px 0px;
+}
+
+
+#logo {
+    max-width: 150px;
+    text-align: center;
+    padding: 1% 7% 1% 42%;
+}
