@@ -1,0 +1,57 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+        <form id="checkoutForm" class="contact" action="completed.html">
+            <label for="Fullname">
+                <h3>Full Name:</h3>
+                <input id="Fullname" type="text" required>
+            </label>
+            <label for="email">
+                <h3>Email:</h3>
+                <input id="email" type="text" required>
+            </label>
+            <label for="Address">
+                <h3>Address:</h3>
+                <input id="address" type="text" required>
+            </label>
+            <label for="PaymentMethod">
+                <h3>Payment Method:</h3>
+                <select name="PaymentMethod" id="payment" required>
+                    <option value="paymethod" disabled selected hidden>Choose a Payment Method</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </label>
+            <p id="creditCardContainer" class="hide">
+                <label for="CreditCard">
+                    <h3>Credit Card Number:</h3>
+                    <input id="credit" type="text" placeholder="Enter 16 digits" pattern="[0-9]{16}" required>
+                </label>
+                <label for="Username">
+                    <h3>PayPal Username:</h3>
+                    <input id="username" type="text" placeholder="Enter PayPal Username">
+                </label>
+                <label for="PlaceOrder" required>
+                    <button>Place Order</button>
+                    <!--<input id="order" type="button">-->
+                </label>
+            </p>   
+
+        </form>
+
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html"></form>
+    </main>
+  </body>
+</html>
