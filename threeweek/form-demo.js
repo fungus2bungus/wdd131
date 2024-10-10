@@ -9,6 +9,20 @@ function validateForm(event) {
     // start by assuming the form is valid.
     let isValid = true;
     // add our validations here
+    const name = "Bob";
+    const num = 1234123412341234;
+
+    if (theForm.payment.value === "creditCard") {
+      if (theForm.credit.value !== 1234123412341234) {
+        isValid = false;
+        errors.push("Your credit card number is not 1234123412341234");
+      }
+    }
+
+    if(theForm.fullName.value !== "Bob") {
+      isValid = false;
+      errors.push("Your name is not Bob");
+    }
   
     // if we ran into any problems above valid will be false.
     if (!isValid) {
@@ -26,7 +40,7 @@ function validateForm(event) {
     const theForm = document.querySelector("#checkoutForm");
     // we will also need the creditCardContainer and paypalUsernameContainer
     const creditCardContainer = document.getElementById("creditCardContainer");
-    const paypalContainer = document.querySelector("#username");
+    const paypalContainer = document.getElementById("paypalContainer");
   
     // Hide payment containers by adding the '.hide' class to each of them
     creditCardContainer.classList.add("hide");
@@ -34,16 +48,16 @@ function validateForm(event) {
   
     // Disable required for payment fields...if we hide a required field the browser will throw an error when we try to submit!
     theForm.credit.required = false;
-    theForm.username.requred = false;
+    theForm.palName.required = false;
   
     // Show the container based on the selected payment method, and add the required attribute back.
-    if(theForm.paymentType.value === "credit") {
+    if(theForm.payment.value === "creditCard") {
       creditCardContainer.classList.remove("hide");
-      theForm.credit.requred = "true";
+      theForm.credit.required = "true";
     }
-    else if(theForm.paymentType.value === "paypal") {
+    else if(theForm.payment.value === "paypal") {
       paypalContainer.classList.remove("hide");
-      theForm.Username.requred = "true";
+      theForm.palName.required = "true";
     }
   
   }
@@ -56,5 +70,5 @@ function validateForm(event) {
   }
   // attach a change event handler to the paymentMethod input
   document.querySelector("#payment").addEventListener("change", togglePaymentDetails);
-  
+  document.addEventListener("submit",validateForm);
   // attach a submit event handler to the form

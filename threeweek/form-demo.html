@@ -12,41 +12,39 @@
     <header><h1>Checkout</h1></header>
     <main>
         <form id="checkoutForm" class="contact" action="completed.html">
-            <label for="Fullname">
-                <h3>Full Name:</h3>
-                <input id="Fullname" type="text" required>
+            <label for="fullName">Full Name:
+                <input type="text" id="fullName" name="fullName" required>
             </label>
-            <label for="email">
-                <h3>Email:</h3>
-                <input id="email" type="text" required>
+            <label for="email">Email:
+                <input type="text" id="email" name="email" required>
             </label>
-            <label for="Address">
-                <h3>Address:</h3>
-                <input id="address" type="text" required>
+            <label for="address">Address:
+                <textarea type="text" id="address" name="address" rows="4" required></textarea>
             </label>
-            <label for="PaymentMethod">
-                <h3>Payment Method:</h3>
-                <select name="PaymentMethod" id="payment" required>
+            <label for="paymentMethod">Payment Method:
+                <select name="paymentMethod" id="payment" required>
                     <option value="paymethod" disabled selected hidden>Choose a Payment Method</option>
-                    <option value="credit">Credit Card</option>
+                    <option value="creditCard">Credit Card</option>
                     <option value="debit">Debit Card</option>
                     <option value="paypal">PayPal</option>
                 </select>
             </label>
             <p id="creditCardContainer" class="hide">
-                <label for="CreditCard">
-                    <h3>Credit Card Number:</h3>
-                    <input id="credit" type="text" placeholder="Enter 16 digits" pattern="[0-9]{16}" required>
+                <label for="credit">Credit Card Number:
+                    <input type="text" id="credit" name="credit" placeholder="Enter 16 digits" pattern="[0-9]{16}" required>
                 </label>
-                <label for="Username">
-                    <h3>PayPal Username:</h3>
-                    <input id="username" type="text" placeholder="Enter PayPal Username">
+            <!--I put had all the text as h3s, for some reason that broke the .hide class, probably because h3 is higher in terms of order?-->
+            </p>
+            <p id="paypalContainer" class="hide">
+                <label for="palName">Paypal Username:
+                    <input type="text" id="palName" name="palName" placeholder="Enter PayPal Username" required>
                 </label>
-                <label for="PlaceOrder" required>
-                    <button>Place Order</button>
-                    <!--<input id="order" type="button">-->
-                </label>
-            </p>   
+            </p>
+
+            <label for="placeOrder" required>
+                <button id="placeOrder" name="placeOrder">Place Order</button>
+                <!--<input id="order" type="button">-->
+            </label>
 
         </form>
 
