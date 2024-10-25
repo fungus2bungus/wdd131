@@ -1,6 +1,29 @@
+
+main {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+}
+
+
 .die {
     /* border: gray 2px solid; */
     width: 7%;
     height: 7%;
     margin: 10px 10px 10px 10px;
+}
+
+#disresults {
+    
+    max-height: 200px;
+    overflow: auto;
+    background-color: gainsboro;
+    border: #fff 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 30px;
+    margin: 0px 50px 0px 0px;
+}
+
+.resroll {
+    border-bottom: gray 1px solid;
+    padding: 5px 0px 0px 0px;
 }

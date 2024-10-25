@@ -20,7 +20,7 @@ let resarry = [];
 // }
 
 function addRollResult(entry) {
-    return `<p>${entry.id}: ${entry.result}</p>`
+    return `<p class="resroll">${entry.id}: ${entry.result}</p>`
 }
 
 
