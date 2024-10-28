@@ -12,15 +12,21 @@ main {
     margin: 10px 10px 10px 10px;
 }
 
+.die:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
 #disresults {
     
-    max-height: 200px;
+    max-height: 40%;
+    width: 60%;
     overflow: auto;
     background-color: gainsboro;
     border: #fff 1px solid;
     border-radius: 5px;
     padding: 10px 20px 10px 30px;
-    margin: 0px 50px 0px 0px;
+    margin: 0px 20% 0px 10%;
 }
 
 .resroll {
