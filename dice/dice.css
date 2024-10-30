@@ -18,8 +18,7 @@ main {
 }
 
 #disresults {
-    
-    max-height: 40%;
+    height: 20rem;
     width: 60%;
     overflow: auto;
     background-color: gainsboro;
