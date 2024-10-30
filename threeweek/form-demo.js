@@ -13,7 +13,7 @@ function validateForm(event) {
     const num = 1234123412341234;
 
     if (theForm.payment.value === "creditCard") {
-      if (theForm.credit.value !== 1234123412341234) {
+      if (theForm.credit.value !== "1234123412341234") {
         isValid = false;
         errors.push("Your credit card number is not 1234123412341234");
       }
