@@ -1,0 +1,25 @@
+body {
+    background-color: lightgray;
+}
+
+hr {
+    color: royalblue;
+}
+
+#subtitle {
+    color: royalblue;
+}
+
+#content {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: darkgray;
+}
+
+.list {
+    text-align: left;
+    
+}
