@@ -1,0 +1,66 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+#subtitle {
+    color: royalblue;
+    font-size: 20px;
+    margin: 0px 4em 0px 4em;
+    padding: 0 0 1.5em 0;
+}
+
+#content h1,p {
+    text-align: center;
+}
+
+hr {
+    border-bottom: 3px inset royalblue;
+    margin: 5px 3em 5px 3em;
+}
+
+#content img {
+    display: block;
+    margin:auto;
+    width:50%;
+}
+
+#content {
+    padding: 10px;
+    margin: 50px;
+    border: 1px solid darkgray;
+}
+
+#topics {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+}
+
+.list {
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
+
+/*#content:nth-child {
+    text-align: left;
+}*/
+
+
+
+
+
+
+
+
