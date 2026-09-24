@@ -13,18 +13,19 @@ h2 {
 
 #subtitle {
     color: royalblue;
-    font-size: 20px;
-    margin: 0px 4em 0px 4em;
-    padding: 0 0 1.5em 0;
+    font-size: 22px;
 }
 
-#content h1,p {
+h1,p {
     text-align: center;
 }
 
 hr {
-    border-bottom: 3px inset royalblue;
-    margin: 5px 3em 5px 3em;
+    /*border: 1px inset royalblue;*/
+    height: 3px;
+    background-color: royalblue;
+    margin: 30px auto;
+    width: 80%;
 }
 
 #content img {
