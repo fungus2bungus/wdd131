@@ -4,14 +4,14 @@
 
 body {
   font-family: Roboto, sans-serif;
-  margin: auto;
+  margin: 0px;
 }
 header,
 main,
 footer {
   max-width: 1000px;
-  margin: auto auto;
-  padding: 1rem;
+  margin: 0px 0px;
+  padding: 1rem 1rem;
   background-color: dodgerblue;
 }
 
@@ -34,11 +34,12 @@ header h1 {
 }
 
 img {
-    margin: 2% 8%;
+    margin: 3% 8%;
     width: 14rem;
     height: 14rem;
     border: 5px solid white;
     filter: drop-shadow(4px 4px 10px);
+    object-fit: cover;
 }
 
 h1 {
@@ -74,6 +75,9 @@ footer {
           
 @media screen and (min-width: 900px) {
     /* can't tell if fonts are supposed to be larger or smaller depending on screen size */
+    header, main, footer {
+        padding: 1rem 15%;
+    }
     main {
         display: flex;
         flex-wrap: wrap;
@@ -94,6 +98,6 @@ footer {
     }
 
     img {
-        margin: 2% 2%;
+        margin: 2% 3%;
     }
 }
