@@ -1,4 +1,4 @@
-h1, nav, main {
+h1, nav, main, footer {
     border-bottom: 2px solid darkgoldenrod;
 }
 
@@ -48,6 +48,7 @@ h2 {
 
 footer {
     text-align: center;
+    padding: 6px 0 6px 0;
 }
 
 @media (min-width: 600px) {
