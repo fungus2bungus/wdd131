@@ -1,0 +1,75 @@
+h1, nav, main {
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+header h1 {
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: auto;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    margin: 1em 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.book {
+    padding: 1rem;
+    margin: 20px 10%;
+}
+
+.info {
+}
+
+.info p {
+    text-align: right;
+}
+
+h2 {
+    margin: auto;
+    color:crimson;
+}
+
+.book img {
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .book {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .info {
+        grid-row: 1/7;
+        text-align: left;
+        border-right: 2px solid darkgoldenrod;
+        padding: 0 2rem 0 0;
+    }
+
+    img {
+        grid-row: 2/6;
+    }
+
+    .review {
+        grid-column: 2;
+        margin: 16px 0px 16px 20px;
+    }
+}
