@@ -8,6 +8,10 @@ header h1 {
     margin: auto;
 }
 
+header {
+    margin-bottom: 2.5rem;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -16,9 +20,13 @@ nav {
 }
 
 nav a {
-    color: red;
+    color:#98161E;
     text-decoration: none;
-    margin: 1em 1em;
+    margin: 0.7em 1em;
+}
+
+nav a:last-child {
+    margin-right: 2em;
 }
 
 nav a:hover {
@@ -26,11 +34,12 @@ nav a:hover {
 }
 
 .book {
-    padding: 1rem;
-    margin: 20px 10%;
+    padding: 16px 10% 16px 10%;
+    border-top: 2px solid darkgoldenrod;
 }
 
-.info {
+.info p:first-child {
+    margin-top: 0;
 }
 
 .info p {
@@ -38,8 +47,7 @@ nav a:hover {
 }
 
 h2 {
-    margin: auto;
-    color:crimson;
+    color:#98161E;
 }
 
 .book img {
@@ -56,6 +64,20 @@ footer {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        border-top: none;
+        padding: 3rem 10% 0rem 10%;
+    }
+
+    .book:last-child {
+        padding-bottom: 2rem;
+    }
+
+    .info p:first-child {
+        margin: 1rem 0px;
+    }
+
+    h2 {
+        margin: auto auto auto 2em;
     }
 
     .info {
@@ -67,6 +89,10 @@ footer {
 
     img {
         grid-row: 2/6;
+    }
+
+    header {
+        margin: auto;
     }
 
     .review {
