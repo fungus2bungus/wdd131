@@ -1,0 +1,98 @@
+h1, nav, main, footer {
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+header h1 {
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: auto;
+}
+
+nav a {
+    color:#98161E;
+    text-decoration: none;
+    margin: 0.7em 1em;
+}
+
+nav a:last-child {
+    margin-right: 2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.book {
+    padding: 16px 10% 16px 10%;
+    border-top: 2px solid darkgoldenrod;
+}
+
+.info p:first-child {
+    margin-top: 0;
+}
+
+.info p {
+    text-align: right;
+}
+
+h2 {
+    color:#98161E;
+}
+
+.book img {
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 6px 0 6px 0;
+}
+
+@media (min-width: 600px) {
+    .book {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        border-top: none;
+        padding: 3rem 10% 3rem 10%;
+    }
+
+    .info p:first-child {
+        margin: 1rem 0px;
+    }
+
+    h2 {
+        margin: auto auto auto 2em;
+    }
+
+    .info {
+        grid-row: 1/7;
+        text-align: left;
+        border-right: 2px solid darkgoldenrod;
+        padding: 0 2rem 0 0;
+    }
+
+    img {
+        grid-row: 2/6;
+    }
+
+    header {
+        margin: auto;
+    }
+
+    .review {
+        grid-column: 2;
+        margin: 16px 0px 16px 20px;
+    }
+}
