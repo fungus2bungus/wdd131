@@ -1,0 +1,34 @@
+name: Updates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Run a command
+        run: echo "The Commit worked"
+
+        # Just to have a way to more easily check when updates go out for me personally
+      - name: Actions ntfy
+        run: |
+          curl \
+            -u ${{ secrets.NTFY_CRED }} \
+            -H "Title: Parachute Updates" \
+            -H "Content-Type: text/plain" \
+            -d $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}' \
+            ${{ secrets.NTFY_URL }}
+        
+      - name: Pull from repo
+        script: |
+          cd /var/www/adroit.click/parachute
+          git pull origin master
+
