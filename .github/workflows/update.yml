@@ -3,9 +3,6 @@ name: Updates
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
-
 
 jobs:
   build:
@@ -14,8 +11,8 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Run a command
-        run: echo "The Commit worked"
+      #- name: Run a command
+      #  run: echo "The Commit worked"
 
         # Just to have a way to more easily check when updates go out for me personally
       - name: Actions ntfy
@@ -27,8 +24,8 @@ jobs:
             -d $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}' \
             ${{ secrets.NTFY_URL }}
         
-      - name: Pull from repo
-        script: |
-          cd /var/www/adroit.click/parachute
-          git pull origin master
+      #- name: Pull from repo
+      #  script: |
+      #    cd /var/www/adroit.click/parachute
+      #    git pull origin master
 
