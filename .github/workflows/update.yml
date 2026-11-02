@@ -18,7 +18,7 @@ jobs:
       - name: Actions ntfy
         run: |
           curl \
-        -u githubler:7mion \
+            -u ${{ secrets.NTFY_CRED }} \
             -H "Title: Parachute Updates" \
             -H "Content-Type: text/plain" \
             -d $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}' \
