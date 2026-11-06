@@ -1,10 +1,12 @@
-<?php 
-use GithubWebhook\Handler;
+<?php `git pull`;
 
-$handler = new Handler("l&*^~Y4-OqXS");
-if ($hander->handle()) {
-    exec("git pull");
-}
-else {
-    echo "Wrong secret";
-}
+
+//use GithubWebhook\Handler;
+//
+//$handler = new Handler("l&*^~Y4-OqXS");
+//if ($hander->handle()) {
+//    exec("git pull");
+//}
+//else {
+//    echo "Wrong secret";
+//}
