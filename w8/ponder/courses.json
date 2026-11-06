@@ -1,0 +1,23 @@
+[
+    {
+        "code": "WDD131",
+        "name": "Dynamic Web Fundamentals",
+        "sections": 
+        [
+            {
+                "sectionNum": 1,
+                "roomNum": "STC 353",
+                "enrolled": 26,
+                "days": "TTh",
+                "instructor": "Brother Thompson"
+            },
+            {
+                "sectionNum": 2,
+                "roomNum": "STC 343",
+                "enrolled": 28,
+                "days": "TTh",
+                "instructor": "Sister Anderson"
+            }
+        ]
+    }
+]

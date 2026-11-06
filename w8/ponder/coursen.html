@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="coursen.js" defer></script>
+        <!-- the above javascript was trying to get this to work with a json array/object. Didn't get it to fully work, but I'm fascinated by json now-->
+        <!-- & for clarification, I attempted this *after* submitting the assignment, just for fun-->
+    </head>
+
+    <body>
+        <h1 id="courseName"></h1>
+        <h2 id="courseCode"></h2>
+        <label for="sectionNumber">Section Number</label>
+        <input id="sectionNumber" />
+        <button id="enrollStudent">Enroll Student</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Section#</th>
+              <th>Room#</th>
+              <th>#Enrolled</th>
+              <th>Days</th>
+              <th>Instructor</th>
+            </tr>
+          </thead>
+          <tbody id="sections"></tbody>
+        </table>
+    </body>
+</html>
